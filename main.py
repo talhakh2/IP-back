@@ -157,7 +157,7 @@ def analyze_data():
 
     return jsonify(final_result)
 
-@app.route('/check', methods=['POST'])
+@app.route('/check', methods=['GET'])
 def check():
     return jsonify({running: 'running'})
     
