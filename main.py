@@ -157,5 +157,9 @@ def analyze_data():
 
     return jsonify(final_result)
 
+@app.route('/check', methods=['POST'])
+def check():
+    return jsonify({running: 'running'})
+    
 if __name__ == '__main__':
      app.run(debug=False, host='0.0.0.0', port=5000)
